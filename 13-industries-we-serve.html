@@ -78,7 +78,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: professionals at work]</span></div>
     </div>
-    <aside class="why" hidden>Why: "A credential" is the page brief's lead message in place of "an exam", so continuing education and microcredential programs self-identify in the first line. The feedback's fix is literal: "who practices" is gone and the sentence now runs on "works in medicine" and "holds the license", the sanctioned replacements. The eyebrow names all three audiences per 6g.</aside>
   </div>
 </section>
 
@@ -125,7 +124,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="24-customer-stories.html">See customer stories</a>
     </div>
-    <aside class="why" hidden>Why: The rows stay the spine of self-identification and now carry the allocated proof in their one-liners: ABEM without its stat, CompTIA and ISACA on technology, PMI and NCBE marked [VERIFY] pending permission, and AAMC named bare as AAMC [VERIFY: confirm customer] with no service description. The feedback's single "See customer stories" CTA replaces the per-row story links, so the page stops promising case studies we do not have. Removed customers come off the list, and the accounting row waits on ACCA instead of naming an unconfirmed customer.</aside>
   </div>
 </section>
 
@@ -143,7 +141,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: the same moment, three professions]</span></div>
     </div>
-    <aside class="why" hidden>Why: The brief keeps this section as the pillar beat and allows an echo of the stakes leg without naming the first mile, so the last paragraph carries the trust-and-relationship turn instead of a First Mile section. "Whether they can practice" is recast through the feedback's rule into work and license. "For every recertification after it" uses the term where the cycle event is the point (6f).</aside>
   </div>
 </section>
 
@@ -174,7 +171,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="08-solutions-overview.html">See all solutions</a>
     </div>
-    <aside class="why" hidden>Why: The routing strip is kept from Round 3 because self-identification should end in a route, not a dead end. "Continuing education and recertification" becomes "continuing education" per the 6f term system, with the recertification use case carried in the item line instead of the label. The four item lines stay at offering level, with no capabilities claimed beyond the solutions the brief names.</aside>
   </div>
 </section>
 
@@ -188,7 +184,6 @@
         <a class="btn btn-secondary" href="24-customer-stories.html">See customer stories</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The page brief keeps "profession" in the closing copy and holds "Industries" as the nav label, so the close stays as written. The soft support claim is Round 3 copy and stays deliberately unmeasured: no numbers attach to it. The pair closes on the standard conversion CTA.</aside>
   </div>
 </section>
 
@@ -249,27 +244,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

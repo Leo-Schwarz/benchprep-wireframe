@@ -77,7 +77,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: product screenshot]</span></div>
     </div>
-    <aside class="why" hidden>Why: The brief's lead message leads and its subhead opens the body; the redundant packaging list the feedback flagged is gone. "Recertification" appears once, as the requirement event, per 6f, and the glued pair label never returns. Hero CTA pair is the standard R4 conversion set.</aside>
   </div>
 </section>
 
@@ -95,7 +94,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: one platform diagram]</span></div>
     </div>
-    <aside class="why" hidden>Why: The feedback's "Most" objection and its replacement line merge the old lead-story and one-platform sections here: its line heads the section (with "exam prep" replacing bare "prep" per the glossary), and the consequence this page must carry, keep the relationship, sits under it. NCEES leads the proof per the allocation, with the story CTA.</aside>
   </div>
 </section>
 
@@ -113,7 +111,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: product screenshot]</span></div>
     </div>
-    <aside class="why" hidden>Why: The exam prep engine reference the feedback called random is gone; the competence claim stands on its own. AI is one light line modifying the learner experience (6a), with the trust line beside it. Everything else is Round 3 fact: short lessons, any device, clear paths.</aside>
   </div>
 </section>
 <section class="section" data-section="4" data-page="Continuing education">
@@ -136,7 +133,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="18-admin-tools.html">See the admin tools</a>
     </div>
-    <aside class="why" hidden>Why: The system-of-record line names Personify and iMIS only, pending the feedback's full list. The NCEES ethics detail sits here as allocated. "Credit tracking" keeps the generic term, so no CEUs or PDUs (glossary).</aside>
   </div>
 </section>
 
@@ -166,7 +162,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="#">Read the ABEM story</a>
     </div>
-    <aside class="why" hidden>Why: ABEM moves to the proof band and quote slot per the brief, and this is the one place the recertification event leads a line (6f). The former-customer quote is replaced by the approved ABEM quote, with the role verify kept in the slot.</aside>
   </div>
 </section>
 
@@ -183,7 +178,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: implementation team]</span></div>
     </div>
-    <aside class="why" hidden>Why: Kept from Round 3 nearly verbatim: credit-history migration is the specific risk this page must remove, and it lands after the proof so the promise meets a felt problem.</aside>
   </div>
 </section>
 
@@ -197,7 +191,6 @@
         <a class="btn btn-secondary" href="24-customer-stories.html">See customer stories</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The Round 3 close headline stands, with "your continuing education program" naming the solution per 6f in place of the retired event term, and the site-wide close body is unchanged. "See pricing" leaves the secondary per the 6e pattern.</aside>
   </div>
 </section>
 </main>
@@ -257,27 +250,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

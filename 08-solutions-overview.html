@@ -79,7 +79,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: product screenshot]</span></div>
     </div>
-    <aside class="why" hidden>Why: The feedback's favored territory is the page's lead message, and it lands here under either home hero. The subhead carries the 6f bridge, "from the first exam to every credential after", so the "prep" territory stretches to recertification, continuing education, and microcredentials without listing differentiators.</aside>
   </div>
 </section>
 
@@ -116,7 +115,6 @@
       <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
       <a class="btn btn-secondary" href="15-platform-overview.html">See the platform</a>
     </div>
-    <aside class="why" hidden>Why: The feedback's structure is adopted: headline and body above four cards, one link per card ("See certification exam prep", and so on), which also resolves the unanchored comment. The title "and recertification" leaves the continuing education card per the feedback and 6f, with the requirement kept in one body line. "Between certifications" becomes "as careers grow". "Under your brand" stays once here as the Solutions slot in the 6d budget.</aside>
   </div>
 </section>
 
@@ -144,7 +142,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback flagged the old journey sentence, so the brief's fixed line replaces it. "Homegrown" becomes "various" per the feedback. The 10x growth stat lands here because the one-journey argument is the outcome story: the same platform carries a learner relationship that keeps compounding.</aside>
   </div>
 </section>
 
@@ -168,7 +165,6 @@
         <p>Who sell exam prep and continuing education across professions.</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The audience trio stays and names all three buyer types per 6g: associations, certification bodies, and training companies share one story rather than a parallel one. The section earns the "set the standard" line as the defining trait of the audience, not as generic praise.</aside>
   </div>
 </section>
 
@@ -184,7 +180,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: platform screenshot]</span></div>
     </div>
-    <aside class="why" hidden>Why: AI appears only here, one descriptor line in the capabilities strap, per the brief, with no AI section. The six capability names are kept as the routing strap into Platform pages. Internal product names stay out per the house rules.</aside>
   </div>
 </section>
 
@@ -202,7 +197,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="24-customer-stories.html">See customer stories</a>
     </div>
-    <aside class="why" hidden>Why: The logo rail is one of the four proof items allocated to this page, and it carries the trust load between the platform strap and the FAQ. The label sits here as proof, while Section 4 keeps the audience definition, so the two lines do different jobs. Reviewer note: Add further logos only from the confirmed current customers with cleared rights.</aside>
   </div>
 </section>
 
@@ -259,7 +253,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="21-integrations.html">See the integrations</a>
     </div>
-    <aside class="why" hidden>Why: The differentiation answer keeps "Most platforms serve people an organization already has", the cleanest first mile argument on the site, without naming the concept (6b keeps "first mile" off this page). The headline speaks to the program owner per voice rule 1. The See pricing button is dropped per 6e. SCORM, xAPI, PDF, and the integration list are the validator answers, kept exactly as sourced in Round 3. Reviewer note: The 12 million lifetime figure and the 500-to-1.5M range are the FAQ proof slots; both are marked <span class="flag">[VERIFY]</span>, and the lifetime number is being reconciled against the current site's figures.</aside>
   </div>
 </section>
 
@@ -273,7 +266,6 @@
         <a class="btn btn-secondary" href="15-platform-overview.html">See the platform</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The close answers the hero question with the demo ask, which is the right move for the warm lead who reads this hub end to end. The primary label stays fixed and the secondary points at the platform overview.</aside>
   </div>
 </section>
 
@@ -334,27 +326,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

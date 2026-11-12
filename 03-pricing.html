@@ -77,7 +77,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: pricing models chart]</span></div>
     </div>
-    <aside class="why" hidden>Why: The strategy's key decision (6e) answers the feedback's "A reviewer will need some support here": the headline names the program, not the headcount, and removes the floor signal the feedback questioned. "Program" also widens beyond exam prep, per the Round 4 story.</aside>
   </div>
 </section>
 
@@ -130,7 +129,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: One glossary fix ships here ("the admin tools" for the console name). The list keeps its plain, checklist honesty, which is the page's tone asset.</aside>
   </div>
 </section>
 
@@ -165,7 +163,6 @@
         <p>Sell direct to learners.</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: R3's add-on set stands. "Under your brand" spends its 6d Pricing slot on the apps line, where a validator looks for exactly that confirmation.</aside>
   </div>
 </section>
 <section class="section" data-section="4" data-page="Pricing">
@@ -180,7 +177,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: team photo]</span></div>
     </div>
-    <aside class="why" hidden>Why: "A team to get you live" loses the weak verb per the voice rules. The eight-weeks line is the approved, verified-softened version of "go live in weeks" (6e).</aside>
   </div>
 </section>
 
@@ -223,7 +219,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The key line (6e) stays exactly as approved. The 133% line lands here as the one growth-context proof the page carries, per the proof bank.</aside>
   </div>
 </section>
 
@@ -273,7 +268,6 @@
     <div class="btn-row">
       <a class="btn btn-primary" href="04-contact-us.html">Request a proposal</a>
     </div>
-    <aside class="why" hidden>Why: The feedback's "Why?" gets its one honest line here instead of a hero floor signal: above 1,000 learners, more of the platform earns its keep. "BluePrint" appears nowhere in visitor copy (glossary: "content authoring").</aside>
   </div>
 </section>
 
@@ -287,7 +281,6 @@
         <a class="btn btn-secondary" href="04-contact-us.html">Request a proposal</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: "Get pricing for your program" loses the banned weak verb. The pair matches the Pricing CTA standard (6e): both buttons start a conversation, which the copy says plainly.</aside>
   </div>
 </section>
 
@@ -348,27 +341,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

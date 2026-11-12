@@ -78,7 +78,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: reporting dashboard]</span></div>
     </div>
-    <aside class="why" hidden>Why: The brief's lead message keeps the confidence angle in "and why", so the hero states readiness and promises its reason in the same breath. The subhead carries the Round 3 promise in new order: activity, performance, confidence, and the depth from dashboards to raw data. The audience line names all three buyer types per the one-story, two-economics decision.</aside>
   </div>
 </section>
 
@@ -93,7 +92,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: confidence and performance chart]</span></div>
     </div>
-    <aside class="why" hidden>Why: The brief keeps this block second and never last, so the hero's "why" gets its evidence before anything else lands. The two-learner contrast is the sharpest differentiator on the page and is kept close to its Round 3 wording. The proof slot sits here because a confidence claim is exactly what a validator will want substantiated.</aside>
   </div>
 </section>
 <section class="section" data-section="3" data-page="Reporting and data">
@@ -117,7 +115,6 @@
       </div>
     </div>
     <p>Qualitative color from the NCEES breadth story: readiness tracked across the seven FE exam disciplines <span class="flag">[VERIFY: phrasing, rights, and currentness]</span>.</p>
-    <aside class="why" hidden>Why: This is the page's job, and the frame comes nearly verbatim from Round 3 because the three questions are already the clearest thing in the deck. The revenue question carries the deliberate P2 bridge, and the brief's "where revenue hides" phrasing points at it in the body before the items expand. The NCEES breadth line enters as qualitative color for the weight of the first question. Proof note: [VERIFY: phrasing, rights, and currentness].</aside>
   </div>
 </section>
 
@@ -153,7 +150,6 @@
       </table>
     </div>
     <p>Raw-data story at scale: the range runs from 500 to 1.5 million <span class="flag">[VERIFY: units and baseline for this range]</span>.</p>
-    <aside class="why" hidden>Why: The feedback's objection is honored here: no add-on framing and no pricing CTA. "Pick the depth you need" keeps its Round 3 headline because it already frames depth rather than tiers, and the table now simply presents all three levels with who each is for, as the feedback asked. The scale story enters as the raw-data proof color [VERIFY], and the billing sentence that drew the pricing comment is gone entirely. Proof note: [VERIFY: units and baseline for this range]. [VERIFY: data partner line is current].</aside>
   </div>
 </section>
 
@@ -183,7 +179,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="17-ai-engine.html">See the AI engine</a>
     </div>
-    <aside class="why" hidden>Why: The brief green-lights AI on this page, and the two data-side jobs get their non-catalog descriptions exactly as allocated ("ask questions of your program's data in plain language"; "at-risk signals by topic"). Per 6a the catalog names stay on the AI Engine page, so this section describes the jobs and sends validators there. The trust line rides with the claim, and every line is written to the aging rule: outcomes, not features.</aside>
   </div>
 </section>
 
@@ -208,7 +203,6 @@
         <p>Adaptive practice, personalized study plans, and simulated exams that make exam day feel familiar.</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback's swap is adopted: Admin tools is out and the row is rebuilt on the solutions where learner activity actually generates this data. The brief's final set names Practice exams, Microcredentials, and Certification exam prep, and the retired "and recertification" twin label goes quietly with the old row (6f). Each line is approved solution framing from the platform stack, so a validator can route straight to the page that matters.</aside>
   </div>
 </section>
 
@@ -223,7 +217,6 @@
         <a class="btn btn-secondary" href="25-developer-center.html">See the Developer center</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback's first suggestion closes the page as the headline, which now carries "See the data" on its own. As the secondary it only repeated that headline and pointed nowhere, so the pair returns to Round 3's "See the Developer center" and routes the validator to the docs. Request a demo stays primary. The recap keeps all three answers in the warm lead's head on the way out, revenue included.</aside>
   </div>
 </section>
 
@@ -284,27 +277,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

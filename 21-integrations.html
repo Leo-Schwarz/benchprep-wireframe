@@ -78,7 +78,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: integration diagram]</span></div>
     </div>
-    <aside class="why" hidden>Why: The lead message is kept word for word per the brief. The body carries the three connection types that organize the table, and the second line previews the partner breadth without claiming the full list (that is the slot in Section 2).</aside>
   </div>
 </section>
 
@@ -148,7 +147,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="25-developer-center.html">See the Developer center</a>
     </div>
-    <aside class="why" hidden>Why: The Round 3 table becomes the validator's checklist in full. Every confirmed partner is named and every confirmed standard is listed in its row's how, so nothing is implied that is not on the proof list. The feedback's BigCommerce note resolves the ecommerce row and kills its "Confirm partner" hedge. Badging earns its own row because Accredible and Credly are in the confirmed set but had no row in Round 3. The feedback's "long list" note is answered the only honest way today: named examples plus a proof slot, with iMIS and Personify kept as the brief instructs. Proof note: [VERIFY: each partner named plus logo rights where shown].</aside>
   </div>
 </section>
 <section class="section" data-section="3" data-page="Integrations">
@@ -170,7 +168,6 @@
     <div class="btn-row">
       <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
     </div>
-    <aside class="why" hidden>Why: The brief calls this honesty block a trust asset, so it stays nearly verbatim; validators reward a straight answer and it does the soft conversion work. The demo CTA matches its own "first call" language. The proof slot replaces the removed quote and is named exactly as the brief's allocation table directs. The removed former-customer quote does not return unless its customer status is confirmed again.</aside>
   </div>
 </section>
 
@@ -197,7 +194,6 @@
         <p>WCAG, SOC 2, and GDPR compliance confirmed.</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The Round 3 related-link strip survives as real content so a validator can keep checking without hunting the nav. "Continuing education and recertification" becomes "Continuing education" per the 6f term system, and the recertification event stays where it belongs (the requirement, not the solution name). Security joins the strip because its compliance facts are confirmed proof and validators look for them, and it frees the close to a two-button pair.</aside>
   </div>
 </section>
 
@@ -211,7 +207,6 @@
         <a class="btn btn-secondary" href="15-platform-overview.html">See the platform</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The Round 3 close line is kept; it is the demo ask and the validation ask in one move. "See the platform" replaces the three-link row (Security, back to platform overview) to respect the two-button CTA limit, and it names its destination concretely per the CTA system.</aside>
   </div>
 </section>
 </main>
@@ -271,27 +266,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

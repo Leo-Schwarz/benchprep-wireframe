@@ -212,7 +212,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback's "Prepare learners for exam day" replaces the weak "Get" verb and heads the merged unit. The practice-depth band folds in as the mechanism, so the proof lands on what causes it. "Weeks of preparation" replaces the exam-week anchor per the glossary.</aside>
   </div>
 </section>
 
@@ -452,27 +451,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 </body>
 </html>

@@ -85,7 +85,6 @@
       <div class="logo-ph">[Logo]</div>
       <div class="logo-ph">[Logo]</div>
     </div>
-    <aside class="why" hidden>Why: The brief's lead message replaces "from practice to recertification" and leaves the credential arc open (6f). The pair is the page's conversion CTA plus Round 3's hero secondary "See the Developer center", which routes on past the page the visitor is standing on; the capability map below carries the platform tour. The logo line names only confirmed customers, marked [VERIFY] for rights per brand. Proof: Logo line: "The platform behind programs at AHA, HRCI, and PMI, and more" [VERIFY: logo rights per brand; confirm final customer set].</aside>
   </div>
 </section>
 <section class="section" data-section="2" data-page="Platform overview">
@@ -145,7 +144,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback's outcome framing (learner engagement and satisfaction, then admin efficiency) replaces the widget sentence; catalog names stay on the AI Engine page and the row describes the job instead (6a), with the trust line attached where AI is sold. Learner rows lead and admin rows follow per the feedback's sequencing note; "console" is out for "admin tools" and "BluePrint" becomes "content authoring" per the glossary. Each row is its own destination link in the design.</aside>
   </div>
 </section>
 
@@ -163,7 +161,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: practice exam screen]</span></div>
     </div>
-    <aside class="why" hidden>Why: The feedback asked for the learner side to be called out before the admin sections. Exam-day readiness now sits under learner outcomes, ahead of everything admin-facing. The R3 confirm note is carried as a [VERIFY] slot rather than a promise.</aside>
   </div>
 </section>
 
@@ -179,7 +176,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The one platform pillar carries the admin story here: one catalog, both revenue models, spoken the approved way (provision seats to organizations, sell to individual learners). "Under your brand" is the Platform overview slot of the 6d budget, said once here as a platform fact and never as the headline.</aside>
   </div>
 </section>
 
@@ -191,7 +187,6 @@
       <p>The schedules your procurement team will ask for are published.</p>
     </div>
     <p>WCAG compliant, SOC 2, and GDPR</p>
-    <aside class="why" hidden>Why: The feedback's confirmation resolves the R3 parenthetical: the trio names exactly what is verified, with no audit claim implied beyond it. The procurement line stays because validators are the secondary reader; the deeper security route lives in the close pair via the new trust page. Proof: WCAG compliant, SOC 2, and GDPR (confirmed by a reviewer).</aside>
   </div>
 </section>
 
@@ -219,7 +214,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback's 2025 trio replaces the superseded activity counts and this band is its exclusive home on the site (1 billion minutes also appears as a secondary number on About). Marked [VERIFY] per the proof table's "use, verify" status. The top and bottom of the customer range stays from Round 3 with its confirm flag, and the lifetime learner number is kept but flagged per the brief. Reviewer note: confirm the customer range "about 500 annual learners to more than 1.5 million" (Round 3 marked it to confirm).</aside>
   </div>
 </section>
 
@@ -236,7 +230,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: team photo]</span></div>
     </div>
-    <aside class="why" hidden>Why: The partnership pillar is named but subordinate here: one band before the close, so the scan stays about the platform. The secondary keeps the "See" prefix for platform pages while naming its destination concretely.</aside>
   </div>
 </section>
 
@@ -250,7 +243,6 @@
         <a class="btn btn-secondary" href="#">See security and compliance</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: "Your exam blueprint" is out per the feedback, replaced with "your content plan"; the redundant middle item is recast as "your courses" to keep the list's rhythm. The second CTA is "See security and compliance," routing to the new trust page per the brief; "Request a proposal" is reserved for Pricing and Partnerships in the CTA system. Wiring note: the trust page URL is not settled yet, so the second CTA links to # until it is.</aside>
   </div>
 </section>
 
@@ -311,27 +303,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

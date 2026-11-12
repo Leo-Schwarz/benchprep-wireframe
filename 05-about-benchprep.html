@@ -77,7 +77,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: team at work]</span></div>
     </div>
-    <aside class="why" hidden>Why: The belief is the lead message by strategy, and it earns its place by showing buyers what the company protects: the learner who was capable all along. The second sentence widens gently to the training companies that prepare people to meet the same standard.</aside>
   </div>
 </section>
 
@@ -92,7 +91,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: early iPhone prep app]</span></div>
     </div>
-    <aside class="why" hidden>Why: The origin story stays as written, with one quiet change: the 2015 line names no partner (the feedback's "with ACT" question, resolved to naming nothing per the strategy's recommendation).</aside>
   </div>
 </section>
 <section class="section" data-section="3" data-page="About Benchprep">
@@ -108,7 +106,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: the first mile diagram]</span></div>
     </div>
-    <aside class="why" hidden>Why: The 6b definition appears in full, and "weeks of preparation" replaces any exam-week anchoring (glossary). The responsible-AI line is the sanctioned trust claim in 6a phrasing, kept to one sentence as briefed.</aside>
   </div>
 </section>
 
@@ -141,7 +138,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The row keeps the deck's shape but replaces unconfirmed numbers with explicit slots, per the brief and the proof bank. 1 billion minutes is its one secondary appearance here.</aside>
   </div>
 </section>
 <section class="section" data-section="5" data-page="About Benchprep">
@@ -187,7 +183,6 @@
         <p>An evolved brand for the learning platform built for professional certification.</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback's two timeline edits ship as written: no ABEM callout (it read random on a company page) and a learner milestone in its place, slotted until the number lands. The 2026 line is the feedback's wording.</aside>
   </div>
 </section>
 
@@ -233,7 +228,6 @@
       <a class="btn btn-primary" href="24-customer-stories.html">See customer stories</a>
       <a class="btn btn-secondary" href="06-careers.html">See open roles</a>
     </div>
-    <aside class="why" hidden>Why: Leadership only, per the brief. Phone numbers are gone (Feedback noted: certainly not), and the deck's "IImage" typo dies with them. Bios and emails hold one decision slot; the R3 third link (Newsroom) is cut to keep the two-button rule (Newsroom is reachable from the footer).</aside>
   </div>
 </section>
 
@@ -245,7 +239,6 @@
         <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The close was kept because the promise matches the named-team differentiator that this page just proved.</aside>
   </div>
 </section>
 </main>
@@ -305,27 +298,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

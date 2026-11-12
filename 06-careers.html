@@ -76,7 +76,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: team at work]</span></div>
     </div>
-    <aside class="why" hidden>Why: The feedback's broadened line is adopted verbatim as the opening sentence. "Get ready" becomes "prepare" in the headline under the verb rules. The primary here is "See open roles," the one sanctioned primary-CTA exception (flagged to the team in the CTA system).</aside>
   </div>
 </section>
 
@@ -90,7 +89,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: people at work]</span></div>
     </div>
-    <aside class="why" hidden>Why: Mission stays close to R3. "Practice" never appears as a profession anywhere on the site (house rule), so "professions" does the work.</aside>
   </div>
 </section>
 
@@ -113,7 +111,6 @@
         <p>Our customers are in this for decades, and so are we.</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The "plainly" repetition is real (feedback noted): the phrase now appears zero times. The second value becomes "We say what we mean," and the first drops "plainly" for "explain." "We do the hard part" and "We stay for the long run" keep their Round 3 wording per the strategy.</aside>
   </div>
 </section>
 
@@ -140,7 +137,6 @@
         </div>
       </details>
     </div>
-    <aside class="why" hidden>Why: The SEO case in the feedback is accepted: the earlier awards and their press releases stay reachable behind view more, while the 2026 wins lead. The award names are slotted exactly as the brief requires.</aside>
   </div>
 </section>
 
@@ -153,7 +149,6 @@
         <a class="btn btn-secondary" href="02-why-benchprep.html">Why Benchprep</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The warm line ships with the safer one parked as its alternative: strategy preferred the first for warmth and left the call to the team. "Come build the first mile" cannot stay regardless: the first mile belongs to four pages only (6b).</aside>
   </div>
 </section>
 </main>
@@ -213,27 +208,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

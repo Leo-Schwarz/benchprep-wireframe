@@ -78,7 +78,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: course content on any device]</span></div>
     </div>
-    <aside class="why" hidden>Why: The approved lead message heads the page while the feedback's firmer line does the explaining in one breath. The second line carries the any-device promise and the keep-current promise already used on Home, so the content team sees all three modes (build, import, hand off) before scrolling.</aside>
   </div>
 </section>
 
@@ -148,7 +147,6 @@
       </div>
     </div>
     <p>Content and interface in more than a dozen languages <span class="flag">[VERIFY: confirm the 12+ count and the exact wording]</span>.</p>
-    <aside class="why" hidden>Why: The feedback's action-based rewrite turns "Standards" into "Import what you have," since the heading promises what the team can do. The internal ContentBluePrint name dies with its typo; "content authoring" is what the visitor buys (glossary). LTI leaves this list for the sell section, and the conversion line stays because it is the "import or hand off" promise in practice. Proof note: [VERIFY: confirm the 12+ count and the exact wording].</aside>
   </div>
 </section>
 <section class="section" data-section="3" data-page="Content management">
@@ -166,7 +164,6 @@
       <div class="img-ph"><span class="img-ph-label">[Visual: selling into another learning platform diagram]</span></div>
     </div>
     <p>BigCommerce (ecommerce), Accredible and Credly (badging), Personify and iMIS (AMS), Snowflake (data), Zoom Meetings (video), and Skillable (labs) connect to the platform <span class="flag">[VERIFY: each partner named plus logo rights where shown]</span>.</p>
-    <aside class="why" hidden>Why: This is the page's one commerce beat (P2), and it lands directly on the brief's job of proving that selling content is covered. The LTI certification is the allocated proof and is flagged for verification of current status. The confirmed integration set rides here because selling only works when commerce and membership systems connect; the full table belongs to the Integrations page. Proof notes: [VERIFY: certification current] and [VERIFY: each partner named plus logo rights where shown].</aside>
   </div>
 </section>
 
@@ -185,7 +182,6 @@
       <div class="img-ph"><span class="img-ph-label">[Visual: AI drafting workflow]</span></div>
     </div>
     <p>AI now serves learners, program admins, and content admins.</p>
-    <aside class="why" hidden>Why: The brief grants this page the two content-side AI capabilities, and 6a says describe the job rather than name the catalog. The drafting line is written as an outcome (a draft your team reviews), the dated framing keeps it honest, and the trust line appears wherever AI is sold. The proof line is the approved content-side platform fact.</aside>
   </div>
 </section>
 
@@ -202,7 +198,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: team working with a customer]</span></div>
     </div>
-    <aside class="why" hidden>Why: The services band is where "let our team do it for you" lands, and it stays at the level of the work offered in Round 3, with nothing added. The cross-CTA changes automatically with the feedback's call: one services label, used in the hero and here, replacing "Developer center" everywhere on the page.</aside>
   </div>
 </section>
 <section class="section" data-section="6" data-page="Content management">
@@ -220,7 +215,6 @@
         <span>Attribute to the named HRCI speaker with full title from the post <span class="flag">[VERIFY]</span>.</span>
       </figcaption>
     </figure>
-    <aside class="why" hidden>Why: Richardson is a removed customer, so its quote comes out entirely. The feedback offered the HRCI blog quote to replace it, since the post covers exactly what this page sells. The slot is written now and holds for the pull quote, so the proof beat keeps its place in the page rhythm. Proof notes: [PROOF NEEDED: pull quote from the HRCI CEO-insights blog post on creating engaging learning content]; attribute to the named HRCI speaker with full title from the post [VERIFY].</aside>
   </div>
 </section>
 
@@ -248,7 +242,6 @@
         <p>AI-enhanced help across learning, administration, and content.</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback's closing pair is adopted as "See a course in action," which also installs the platform-page "See" secondary in place of "Developer center." The Round 3 cross-link trio is merged here as Where-next items so the page routes to adjacent solutions and the AI Engine without a footer-repeat list. "Continuing education and recertification" loses its banned suffix per 6f.</aside>
   </div>
 </section>
 
@@ -309,27 +302,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

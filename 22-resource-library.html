@@ -78,7 +78,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: resource library shelf]</span></div>
     </div>
-    <aside class="why" hidden>Why: The brief's lead message stays the headline, and the strap fixes the garbled format list so the shelf reads at a glance. The demo pair sits in the hero per the CTA system without crowding the help-first job.</aside>
   </div>
 </section>
 
@@ -104,7 +103,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback asked for webinars high on the page plus an events section, so both open the library directly under the hero per the brief. Scheduling detail waits on proof slots, so nothing unverified ships.</aside>
   </div>
 </section>
 
@@ -128,7 +126,6 @@
         <p>Associations · Certification bodies · Training companies</p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The finder keeps the Round 3 taxonomy with the garbled type list repaired ("eBookReport" becomes eBook and Report). Recertification joins the topics per 6f vocabulary, the audience line names all three buyers so training companies sit inside the same story (6g), and news leaves the grid so the first rows carry evergreen help.</aside>
   </div>
 </section>
 
@@ -172,7 +169,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The four named titles are the page's proof bank (Use, verify), so they lead the shelf. "Between recertifications" becomes "as careers progress" per 6f, and the "most downloaded" claim carries its analytics slot instead of shipping bare.</aside>
   </div>
 </section>
 
@@ -191,7 +187,6 @@
         <button class="btn btn-primary" type="button">Subscribe</button>
       </div>
     </form>
-    <aside class="why" hidden>Why: The email trade is this page's conversion job short of the demo, so it follows the guides once the value has landed. The Round 3 "Email here" placeholder becomes a working signup line.</aside>
   </div>
 </section>
 
@@ -207,7 +202,6 @@
         <p><span class="flag">[PROOF NEEDED: current newsroom item headline and link]</span></p>
       </div>
     </div>
-    <aside class="why" hidden>Why: The feedback notes newsroom posts arrive roughly once a year, so news leaves the finder grid and takes one quiet slot near the bottom instead of three rows of placeholder cards.</aside>
   </div>
 </section>
 
@@ -221,7 +215,6 @@
         <a class="btn btn-secondary" href="24-customer-stories.html">See customer stories</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The Round 3 close stays, and the pair is the sanctioned conversion pair for resource pages (22 to 24) in the CTA system. It names the reader's program, which is who the whole library has been speaking to.</aside>
   </div>
 </section>
 
@@ -282,27 +275,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

@@ -75,7 +75,6 @@
         <div class="img-ph"><span class="img-ph-label">[Visual: contact illustration]</span></div>
       </div>
     </div>
-    <aside class="why" hidden>Why: The question is the routing move: it meets every visitor type at the same door and sends them straight to the one-screen card set below. The body sets the responsiveness promise in plain language.</aside>
   </section>
 
   <section class="section" data-section="2" data-page="Contact us">
@@ -119,7 +118,6 @@
       </div>
       <p><span class="flag">[PROOF NEEDED: general contact address for the page footer]</span></p>
     </div>
-    <aside class="why" hidden>Why: The deck's numbering repeated 01 and 03 across two blocks; one clean sequence fixes it. Route 05 broadens with the feedback's wording, so its destination broadens from the CE page to the Solutions overview. Reviewer notes: proof slots held for the general contact address and the learner help destination. Open questions: if no public help center exists, cut route 04. Decision: confirm route 03 support opens in the same destination as Login.</aside>
   </section>
 
   <section class="section" data-section="3" data-page="Contact us">
@@ -131,7 +129,6 @@
         </div>
       </div>
     </div>
-    <aside class="why" hidden>Why: Kept from R3 per the strategy note. It is the only conversion beat on a utility page, and it earns its place.</aside>
   </section>
 
 </main>
@@ -191,27 +188,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

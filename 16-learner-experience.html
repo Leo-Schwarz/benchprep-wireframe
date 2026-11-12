@@ -78,7 +78,6 @@
       </div>
       <div class="img-ph"><span class="img-ph-label">[Visual: product screenshot]</span></div>
     </div>
-    <aside class="why" hidden>Why: The lead message is the brief's, with the subhead reframed to the buyer's stakes, since learner return is a buyer outcome. The feedback's languages question is answered there too: the differentiators carry the subhead and the language count drops to a feature line. "Everything a learner touches" survives from Round 3, trimmed of the language over-claim.</aside>
   </div>
 </section>
 
@@ -164,7 +163,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="17-ai-engine.html">See the AI engine</a>
     </div>
-    <aside class="why" hidden>Why: Every Round 3 feature survives, reordered so the two named differentiators lead. The AI assistant card stays, with 6a phrasing (help drawn from your content, no catalog names) and the AI Engine link as this section's direction CTA, and the trust line sits in the body because this is where AI is sold. The "under your brand" line uses this page's single 6d feature-level slot.</aside>
   </div>
 </section>
 
@@ -189,7 +187,6 @@
         <span>[Attribution: name and role]</span>
       </figcaption>
     </figure>
-    <aside class="why" hidden>Why: This page is the primary home for the 95% ratings stat, so the band carries it with its [VERIFY] mark. The ACT learner quote is removed per its proof status and replaced by a testimonial slot, because the buyer story needs a current learner voice. The headline stays at the outcome level so the proof does the claiming.</aside>
   </div>
 </section>
 
@@ -220,7 +217,6 @@
     <div class="btn-row">
       <a class="btn btn-secondary" href="08-solutions-overview.html">See all solutions</a>
     </div>
-    <aside class="why" hidden>Why: The feedback's microcredentials question is answered yes: all four solutions now appear behind the experience. "Continuing education and recertification" becomes "Continuing education" per the 6f term system, and "recertification" stays where the cycle event is the point. Item lines reuse only language already on this page.</aside>
   </div>
 </section>
 
@@ -234,7 +230,6 @@
         <a class="btn btn-secondary" href="#">See security and compliance</a>
       </div>
     </div>
-    <aside class="why" hidden>Why: The brief's closing CTA pair replaces Round 3's "Accessibility and security" secondary. Naming the confirmed standards in the body pre-answers the validator visitor mode, and the conversion pair stays on the fixed primary label.</aside>
   </div>
 </section>
 </main>
@@ -294,27 +289,6 @@
     </div>
   </div>
 </footer>
-
-<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
-<script>
-  (function () {
-    var btn = document.getElementById("notes-toggle");
-    if (!btn) { return; }
-    var notes = document.querySelectorAll(".why");
-    btn.addEventListener("click", function () {
-      var show = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", show ? "true" : "false");
-      btn.textContent = show ? "Hide notes" : "Show notes";
-      for (var i = 0; i < notes.length; i++) {
-        if (show) {
-          notes[i].removeAttribute("hidden");
-        } else {
-          notes[i].setAttribute("hidden", "");
-        }
-      }
-    });
-  }());
-</script>
 
 <script src="comments.js" defer></script>
 </body>

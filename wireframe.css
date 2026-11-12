@@ -645,3 +645,14 @@ a.card:hover { background: none; text-decoration: none; }
   .quote blockquote p { font-size: 1.25rem; }
   .quote, .stat-band { padding: var(--s-3); }
 }
+
+/* ---- Review site: sticky navigation ---- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--c-white);
+  border-bottom: 1px solid var(--c-ink);
+}
+section[data-section] { scroll-margin-top: 96px; }
+#notes-toggle, .why { display: none !important; }
