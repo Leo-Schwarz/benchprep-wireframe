@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  var COMMENTS_ENDPOINT = "PASTE_WEB_APP_URL_HERE";
+  var COMMENTS_ENDPOINT = "https://script.google.com/macros/s/AKfycbxKyElr5fLI2WT25DcY5C6DLJ4_aGDqtgvrlsDc3Iph1dtsYwc_XR_6uNPT6BQ5JNr2MQ/exec";
   var NAME_KEY = "bp-wf-commenter-name";
   var REFRESH_MS = 60000;
 
