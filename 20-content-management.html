@@ -9,11 +9,6 @@
 </head>
 <body>
 
-<!-- ============================================================
-     Shared nav. Do not edit the structure or the file names.
-     Page tasks: add aria-current="page" to the nav link that
-     matches the page being built (the current page rule).
-     ============================================================ -->
 <header class="site-header">
   <nav id="site-nav" aria-label="Main">
     <div class="container nav-inner">
@@ -67,21 +62,7 @@
   </nav>
 </header>
 
-<!-- ============================================================
-     Page content goes inside <main>. Page tasks:
-     1. Copy this file to the page name from the brief (example 01-home.html).
-     2. Set the <title> to "Page name | Benchprep wireframe".
-     3. Wrap each approved section as
-        <section class="section" data-section="N"> where N is the section
-        number in approved/NN.md, and keep the approved order.
-     4. Put the approved **Why:** rationale at the end of that section as
-        <aside class="why" hidden>Why: ...</aside>
-     5. Use a section pattern from wireframe.css (see components.html).
-     6. Mark the current page in the nav with aria-current="page".
-     Edit nothing below <main> except the aria-current note above.
-     ============================================================ -->
 <main id="main">
-<!-- Section 1: Hero -->
 <section class="section" data-section="1" data-page="Content management">
   <div class="container">
     <div class="hero">
@@ -101,7 +82,6 @@
   </div>
 </section>
 
-<!-- Section 2: What your content team can do -->
 <section class="section" data-section="2" data-page="Content management">
   <div class="container">
     <div class="section-head">
@@ -171,7 +151,6 @@
     <aside class="why" hidden>Why: The feedback's action-based rewrite turns "Standards" into "Import what you have," since the heading promises what the team can do. The internal ContentBluePrint name dies with its typo; "content authoring" is what the visitor buys (glossary). LTI leaves this list for the sell section, and the conversion line stays because it is the "import or hand off" promise in practice. Proof note: [VERIFY: confirm the 12+ count and the exact wording].</aside>
   </div>
 </section>
-<!-- Section 3: Sell into any LTI platform -->
 <section class="section" data-section="3" data-page="Content management">
   <div class="container">
     <div class="split">
@@ -191,7 +170,6 @@
   </div>
 </section>
 
-<!-- Section 4: AI for the content team -->
 <section class="section" data-section="4" data-page="Content management">
   <div class="container">
     <div class="split">
@@ -211,7 +189,6 @@
   </div>
 </section>
 
-<!-- Section 5: A content team when you need one -->
 <section class="section" data-section="5" data-page="Content management">
   <div class="container">
     <div class="split">
@@ -228,7 +205,6 @@
     <aside class="why" hidden>Why: The services band is where "let our team do it for you" lands, and it stays at the level of the work offered in Round 3, with nothing added. The cross-CTA changes automatically with the feedback's call: one services label, used in the hero and here, replacing "Developer center" everywhere on the page.</aside>
   </div>
 </section>
-<!-- Section 6: The HRCI view on content -->
 <section class="section" data-section="6" data-page="Content management">
   <div class="container">
     <div class="section-head">
@@ -248,7 +224,6 @@
   </div>
 </section>
 
-<!-- Section 7: Close -->
 <section class="section" data-section="7" data-page="Content management">
   <div class="container">
     <div class="cta-band">
@@ -279,9 +254,6 @@
 
 </main>
 
-<!-- ============================================================
-     Shared footer. Do not edit.
-     ============================================================ -->
 <footer id="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -338,7 +310,6 @@
   </div>
 </footer>
 
-<!-- Show notes toggle: fixed button that flips every .why annotation. -->
 <button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
 <script>
   (function () {

@@ -9,11 +9,6 @@
 </head>
 <body>
 
-<!-- ============================================================
-     Shared nav. Do not edit the structure or the file names.
-     Page tasks: add aria-current="page" to the nav link that
-     matches the page being built (the current page rule).
-     ============================================================ -->
 <header class="site-header">
   <nav id="site-nav" aria-label="Main">
     <div class="container nav-inner">
@@ -67,22 +62,8 @@
   </nav>
 </header>
 
-<!-- ============================================================
-     Page content goes inside <main>. Page tasks:
-     1. Copy this file to the page name from the brief (example 01-home.html).
-     2. Set the <title> to "Page name | Benchprep wireframe".
-     3. Wrap each approved section as
-        <section class="section" data-section="N"> where N is the section
-        number in approved/NN.md, and keep the approved order.
-     4. Put the approved **Why:** rationale at the end of that section as
-        <aside class="why" hidden>Why: ...</aside>
-     5. Use a section pattern from wireframe.css (see components.html).
-     6. Mark the current page in the nav with aria-current="page".
-     Edit nothing below <main> except the aria-current note above.
-     ============================================================ -->
 <main id="main">
 
-  <!-- Section 1: Hero -->
   <section class="section" data-section="1" data-page="Contact us">
     <div class="container">
       <div class="hero">
@@ -97,7 +78,6 @@
     <aside class="why" hidden>Why: The question is the routing move: it meets every visitor type at the same door and sends them straight to the one-screen card set below. The body sets the responsiveness promise in plain language.</aside>
   </section>
 
-  <!-- Section 2: Routes -->
   <section class="section" data-section="2" data-page="Contact us">
     <div class="container">
       <div class="section-head">
@@ -142,7 +122,6 @@
     <aside class="why" hidden>Why: The deck's numbering repeated 01 and 03 across two blocks; one clean sequence fixes it. Route 05 broadens with the feedback's wording, so its destination broadens from the CE page to the Solutions overview. Reviewer notes: proof slots held for the general contact address and the learner help destination. Open questions: if no public help center exists, cut route 04. Decision: confirm route 03 support opens in the same destination as Login.</aside>
   </section>
 
-  <!-- Section 3: Close -->
   <section class="section" data-section="3" data-page="Contact us">
     <div class="container">
       <div class="cta-band">
@@ -157,9 +136,6 @@
 
 </main>
 
-<!-- ============================================================
-     Shared footer. Do not edit.
-     ============================================================ -->
 <footer id="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -216,7 +192,6 @@
   </div>
 </footer>
 
-<!-- Show notes toggle: fixed button that flips every .why annotation. -->
 <button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
 <script>
   (function () {
