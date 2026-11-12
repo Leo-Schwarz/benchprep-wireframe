@@ -652,7 +652,18 @@ a.card:hover { background: none; text-decoration: none; }
   top: 0;
   z-index: 100;
   background: var(--c-white);
-  border-bottom: 1px solid var(--c-ink);
 }
 section[data-section] { scroll-margin-top: 96px; }
 #notes-toggle, .why { display: none !important; }
+
+/* ---- Review site: nav links centred on the page ---- */
+@media (min-width: 761px) {
+  .nav-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+  .nav-brand { justify-self: start; }
+  .nav-list { justify-self: center; flex-wrap: nowrap; }
+  .nav-right { justify-self: end; margin-left: 0; }
+}
