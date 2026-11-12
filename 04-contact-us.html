@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us | Benchprep wireframe</title>
+<link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+
+<!-- ============================================================
+     Shared nav. Do not edit the structure or the file names.
+     Page tasks: add aria-current="page" to the nav link that
+     matches the page being built (the current page rule).
+     ============================================================ -->
+<header class="site-header">
+  <nav id="site-nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="01-home.html">Benchprep</a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="02-why-benchprep.html">Why Benchprep</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Solutions</button>
+          <ul class="dropdown">
+            <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+            <li><a href="09-certification-exam-prep.html">Certification exam prep</a></li>
+            <li><a href="12-practice-exams.html">Practice exams</a></li>
+            <li><a href="10-continuing-education.html">Continuing education</a></li>
+            <li><a href="11-microcredentials.html">Microcredentials</a></li>
+            <li><a href="13-industries-we-serve.html">Industries we serve</a></li>
+            <li><a href="14-services.html">Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Platform</button>
+          <ul class="dropdown">
+            <li><a href="15-platform-overview.html">Platform overview</a></li>
+            <li><a href="16-learner-experience.html">Learner experience</a></li>
+            <li><a href="17-ai-engine.html">AI engine</a></li>
+            <li><a href="18-admin-tools.html">Admin tools</a></li>
+            <li><a href="19-reporting-and-data.html">Reporting and data</a></li>
+            <li><a href="20-content-management.html">Content management</a></li>
+            <li><a href="21-integrations.html">Integrations</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Resources</button>
+          <ul class="dropdown">
+            <li><a href="22-resource-library.html">Resource library</a></li>
+            <li><a href="23-blog.html">Blog</a></li>
+            <li><a href="24-customer-stories.html">Customer stories</a></li>
+            <li><a href="25-developer-center.html">Developer center</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="03-pricing.html">Pricing</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a class="nav-login" href="#login">Login</a>
+        <a class="btn btn-primary" href="04-contact-us.html" aria-current="page">Request a demo</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ============================================================
+     Page content goes inside <main>. Page tasks:
+     1. Copy this file to the page name from the brief (example 01-home.html).
+     2. Set the <title> to "Page name | Benchprep wireframe".
+     3. Wrap each approved section as
+        <section class="section" data-section="N"> where N is the section
+        number in approved/NN.md, and keep the approved order.
+     4. Put the approved **Why:** rationale at the end of that section as
+        <aside class="why" hidden>Why: ...</aside>
+     5. Use a section pattern from wireframe.css (see components.html).
+     6. Mark the current page in the nav with aria-current="page".
+     Edit nothing below <main> except the aria-current note above.
+     ============================================================ -->
+<main id="main">
+
+  <!-- Section 1: Hero -->
+  <section class="section" data-section="1" data-page="Contact us">
+    <div class="container">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">CONTACT US</p>
+          <h1>How can we help?</h1>
+          <p>Choose the option that fits, and we will connect you with the right team.</p>
+        </div>
+        <div class="img-ph"><span class="img-ph-label">[Visual: contact illustration]</span></div>
+      </div>
+    </div>
+    <aside class="why" hidden>Why: The question is the routing move: it meets every visitor type at the same door and sends them straight to the one-screen card set below. The body sets the responsiveness promise in plain language.</aside>
+  </section>
+
+  <!-- Section 2: Routes -->
+  <section class="section" data-section="2" data-page="Contact us">
+    <div class="container">
+      <div class="section-head">
+        <h2>Find your route.</h2>
+      </div>
+      <div class="card-grid card-grid--4">
+        <div class="card">
+          <h3>01. I run a credential program and want to talk</h3>
+          <p><a class="card-link" href="04-contact-us.html">Request a demo</a>.</p>
+        </div>
+        <div class="card">
+          <h3>02. I need a formal proposal or have an RFP</h3>
+          <p><a class="card-link" href="#">Request a proposal</a>.</p>
+        </div>
+        <div class="card">
+          <h3>03. I manage a program on Benchprep</h3>
+          <p><a class="card-link" href="#login">Login</a>, or <a class="card-link" href="#">open program support</a>.</p>
+        </div>
+        <div class="card">
+          <h3>04. I am a learner in a customer's program</h3>
+          <p><a class="card-link" href="#">Find learner help</a>. <span class="flag">[PROOF NEEDED: destination for a public help center; cut this route if none exists]</span></p>
+        </div>
+        <div class="card">
+          <h3>05. I already use Benchprep and want to explore more capabilities</h3>
+          <p><a class="card-link" href="08-solutions-overview.html">See all solutions</a>.</p>
+        </div>
+        <div class="card">
+          <h3>06. I want to work here</h3>
+          <p><a class="card-link" href="06-careers.html">See open roles</a>.</p>
+        </div>
+        <div class="card">
+          <h3>07. I am press or an analyst</h3>
+          <p><a class="card-link" href="#">Visit the newsroom</a>.</p>
+        </div>
+        <div class="card">
+          <h3>08. I want to partner</h3>
+          <p><a class="card-link" href="07-partnerships.html">See the partner program</a>.</p>
+        </div>
+      </div>
+      <p><span class="flag">[PROOF NEEDED: general contact address for the page footer]</span></p>
+    </div>
+    <aside class="why" hidden>Why: The deck's numbering repeated 01 and 03 across two blocks; one clean sequence fixes it. Route 05 broadens with the feedback's wording, so its destination broadens from the CE page to the Solutions overview. Reviewer notes: proof slots held for the general contact address and the learner help destination. Open questions: if no public help center exists, cut route 04. Decision: confirm route 03 support opens in the same destination as Login.</aside>
+  </section>
+
+  <!-- Section 3: Close -->
+  <section class="section" data-section="3" data-page="Contact us">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Looking to see the platform?</h2>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+        </div>
+      </div>
+    </div>
+    <aside class="why" hidden>Why: Kept from R3 per the strategy note. It is the only conversion beat on a utility page, and it earns its place.</aside>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     Shared footer. Do not edit.
+     ============================================================ -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Benchprep</h2>
+        <p class="footer-tagline">Learning platform for professional certification.</p>
+        <form class="footer-form" action="#">
+          <input type="email" placeholder="Email" aria-label="Email">
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="02-why-benchprep.html">Why Benchprep</a></li>
+          <li><a href="15-platform-overview.html">Platform</a></li>
+          <li><a href="22-resource-library.html">Resources</a></li>
+          <li><a href="03-pricing.html">Pricing</a></li>
+          <li><a href="04-contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Solutions</h2>
+        <ul>
+          <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+          <li><a href="09-certification-exam-prep.html">Certification exam prep</a></li>
+          <li><a href="12-practice-exams.html">Practice exams</a></li>
+          <li><a href="10-continuing-education.html">Continuing education</a></li>
+          <li><a href="11-microcredentials.html">Microcredentials</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="05-about-benchprep.html">About Benchprep</a></li>
+          <li><a href="06-careers.html">Careers</a></li>
+          <li><a href="07-partnerships.html">Partnerships</a></li>
+          <li><a href="24-customer-stories.html">Customer stories</a></li>
+          <li><a href="25-developer-center.html">Developer center</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Benchprep</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Show notes toggle: fixed button that flips every .why annotation. -->
+<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
+<script>
+  (function () {
+    var btn = document.getElementById("notes-toggle");
+    if (!btn) { return; }
+    var notes = document.querySelectorAll(".why");
+    btn.addEventListener("click", function () {
+      var show = btn.getAttribute("aria-pressed") !== "true";
+      btn.setAttribute("aria-pressed", show ? "true" : "false");
+      btn.textContent = show ? "Hide notes" : "Show notes";
+      for (var i = 0; i < notes.length; i++) {
+        if (show) {
+          notes[i].removeAttribute("hidden");
+        } else {
+          notes[i].setAttribute("hidden", "");
+        }
+      }
+    });
+  }());
+</script>
+
+<script src="comments.js" defer></script>
+</body>
+</html>
+

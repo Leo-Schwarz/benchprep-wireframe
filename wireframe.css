@@ -1,0 +1,647 @@
+/* ==========================================================================
+   Benchprep wireframe kit: wireframe.css
+   One shared stylesheet for all pages, the sitemap (index.html), and the
+   component reference (components.html). Clean unstyled wireframe look:
+   pure black text on a pure white background. The only gray is #ddd and it
+   is used solely for the placeholder cross lines. Structure is drawn with
+   thin 1px solid black outlines and rules: no fills, no shadows, no rounded
+   corners, no color, no decorative type. One system sans-serif font.
+   Headings are bold, all other text is regular. Layout (columns, grids,
+   spacing, max width, responsive rules) is kept. Each block names the
+   pattern it serves.
+   ========================================================================== */
+
+/* ---- Reset ---- */
+*, *::before, *::after { box-sizing: border-box; border-radius: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body, h1, h2, h3, h4, p, ul, ol, li, figure, blockquote, fieldset, legend { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+img, svg { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+/* ---- Variables: black and white, one gray, spacing, type scale ---- */
+:root {
+  /* palette: black on white; #ddd only for placeholder cross lines */
+  --c-white: #ffffff;
+  --c-ink: #000000;
+  --c-cross: #dddddd;
+  /* spacing */
+  --s-1: 8px;
+  --s-2: 16px;
+  --s-3: 24px;
+  --s-4: 40px;
+  --s-5: 64px;
+  --s-6: 96px;
+  --max-width: 1200px;
+  --side-pad: 24px;
+  /* type scale: plain and modest */
+  --t-eyebrow: 0.8125rem;
+  --t-small: 0.875rem;
+  --t-body: 1rem;
+  --t-h3: 1.125rem;
+  --t-h2: 1.5rem;
+  --t-h1: 2rem;
+  --t-stat: 2rem;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---- Base type ---- */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--t-body);
+  line-height: 1.6;
+  color: var(--c-ink);
+  background: var(--c-white);
+}
+h1, h2, h3, h4 { font-weight: 700; }
+h1 { font-size: var(--t-h1); line-height: 1.15; }
+h2 { font-size: var(--t-h2); line-height: 1.25; }
+h3 { font-size: var(--t-h3); line-height: 1.35; }
+p { max-width: 65ch; }
+a { color: var(--c-ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font-family: var(--font-sans); font-size: 0.9em; }
+
+/* eyebrow: just small plain text */
+.eyebrow {
+  font-size: var(--t-eyebrow);
+  font-weight: 400;
+}
+
+/* ---- Focus styles (visible focus site-wide) ---- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--c-ink);
+  outline-offset: 2px;
+}
+
+/* ---- Layout container ---- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--side-pad);
+  padding-right: var(--side-pad);
+}
+.section { padding: var(--s-5) 0; }
+.section-head { margin-bottom: var(--s-3); }
+.section-head .eyebrow { margin-bottom: var(--s-1); }
+.section-head h2 { margin-bottom: var(--s-2); }
+/* stacked blocks in a section container (feature-list over stat-band, stat-band over
+   quote): one --s-3 step between siblings. Same step as .section-head's margin-bottom
+   and .btn-row's margin-top, and sibling margins collapse, so nothing doubles up. */
+.section .container > * + * { margin-top: var(--s-3); }
+
+/* ---- Section markers: dashed top rule and a small plain "Page name · Section N" label ---- */
+section[data-section] {
+  position: relative;
+  border-top: 1px dashed var(--c-ink);
+  /* a little extra top padding above .section's --s-5 so the absolute ::before
+     label can never overlap the heading text, even if the longer
+     "Page name · Section N" label wraps on narrow screens */
+  padding-top: calc(var(--s-5) + var(--s-2));
+}
+section[data-section]::before {
+  content: attr(data-page) " · Section " attr(data-section);
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: var(--c-ink);
+}
+
+/* ---- Buttons: plain outlined rectangles with black text. Primary: 2px border ---- */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--c-ink);
+  background: none;
+  border: 1px solid var(--c-ink);
+  cursor: pointer;
+}
+.btn:hover { text-decoration: none; }
+.btn-primary { border-width: 2px; }
+.btn-secondary { border-width: 1px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-3); }
+
+/* ---- Nav (shared, id="site-nav"): plain text links on white, CSS-only dropdowns on hover and focus ---- */
+#site-nav {
+  background: none;
+  border-bottom: 1px solid var(--c-ink);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 72px;
+}
+.nav-brand {
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.nav-list { display: flex; align-items: center; gap: var(--s-1); flex-wrap: wrap; }
+.nav-item { position: relative; }
+.nav-link {
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  font-size: var(--t-small);
+  font-weight: 400;
+  color: var(--c-ink);
+  background: none;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-link:hover { background: none; text-decoration: underline; }
+.nav-link[aria-current="page"] {
+  background: none;
+  text-decoration: underline;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 240px;
+  padding: var(--s-1);
+  background: var(--c-white);
+  border: 1px solid var(--c-ink);
+  z-index: 50;
+}
+/* open on hover and anywhere inside on keyboard focus */
+.has-dropdown:hover > .dropdown,
+.has-dropdown:focus-within > .dropdown { display: block; }
+.dropdown a {
+  display: block;
+  padding: 0.55rem 0.85rem;
+  font-size: var(--t-small);
+  text-decoration: none;
+  color: var(--c-ink);
+}
+.dropdown a:hover { background: none; text-decoration: underline; }
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-left: auto;
+}
+.nav-login {
+  font-size: var(--t-small);
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.55rem 0.5rem;
+}
+.nav-login:hover { text-decoration: underline; }
+.nav-right .btn { padding: 0.55rem 1.1rem; font-size: var(--t-small); }
+
+/* ---- Hero pattern (.hero): eyebrow, H1, body, two buttons, optional visual on the right ---- */
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--s-4);
+  align-items: center;
+}
+.hero .eyebrow { margin-bottom: var(--s-2); }
+.hero h1 { margin-bottom: var(--s-2); }
+.hero .img-ph { min-height: 340px; }
+
+/* ---- Card grid pattern (.card-grid): 2, 3, or 4 columns of cards with title, text, link ---- */
+.card-grid {
+  display: grid;
+  gap: var(--s-3);
+  margin-top: var(--s-3);
+}
+.card-grid--2 { grid-template-columns: repeat(2, 1fr); }
+.card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid--4 { grid-template-columns: repeat(4, 1fr); }
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  padding: var(--s-3);
+  background: none;
+  border: 1px solid var(--c-ink);
+}
+.card p { font-size: var(--t-small); }
+.card .card-link {
+  margin-top: auto;
+  padding-top: var(--s-1);
+  font-weight: 400;
+  font-size: var(--t-small);
+}
+a.card { text-decoration: none; }
+a.card:hover { background: none; text-decoration: none; }
+
+/* ---- Feature list pattern (.feature-list): icon placeholder + title + text rows ---- */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-3);
+  margin-top: var(--s-3);
+}
+.feature-row {
+  display: flex;
+  gap: var(--s-2);
+  padding-top: var(--s-2);
+  border-top: 1px solid var(--c-ink);
+}
+.feature-row h3 { margin-bottom: 4px; }
+.feature-row p { font-size: var(--t-small); }
+
+/* ---- Split section pattern (.split): text one side, visual placeholder the other ---- */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-4);
+  align-items: center;
+}
+.split .eyebrow { margin-bottom: var(--s-1); }
+.split h2 { margin-bottom: var(--s-2); }
+.split .img-ph { min-height: 300px; }
+
+/* ---- Stat band pattern (.stat-band): numbers with labels, outlined box, no fill ---- */
+.stat-band {
+  padding: var(--s-4);
+  background: none;
+  border: 1px solid var(--c-ink);
+}
+.stat-band h2 { margin-bottom: var(--s-1); }
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-3);
+  margin-top: var(--s-3);
+}
+.stat-num {
+  font-size: var(--t-stat);
+  font-weight: 400;
+  line-height: 1.1;
+}
+.stat-label {
+  font-size: var(--t-small);
+}
+
+/* ---- Quote pattern (.quote): pull quote, attribution, avatar placeholder, outlined box ---- */
+.quote {
+  padding: var(--s-4);
+  background: none;
+  border: 1px solid var(--c-ink);
+}
+.quote blockquote p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.quote figcaption {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+  font-size: var(--t-small);
+}
+
+/* ---- Logo rail pattern (.logo-rail): row of [Logo] boxes ---- */
+.logo-rail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  align-items: center;
+}
+.logo-rail .logo-intro {
+  width: 100%;
+  font-size: var(--t-small);
+}
+.logo-ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 64px;
+  font-size: var(--t-small);
+}
+
+/* ---- FAQ pattern (.faq): outlined items, question opens answer (details/summary) ---- */
+.faq { margin-top: var(--s-3); }
+.faq-item { border: 1px solid var(--c-ink); }
+.faq-item + .faq-item { margin-top: -1px; }
+.faq-item summary {
+  padding: var(--s-2);
+  font-size: var(--t-h3);
+  font-weight: 400;
+  cursor: pointer;
+}
+.faq-answer { padding: 0 var(--s-2) var(--s-2); }
+.faq-answer p { font-size: var(--t-body); }
+
+/* ---- Table pattern (.table): comparisons and integration lists, outlined cells ---- */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: var(--s-3);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--t-small);
+}
+.table th, .table td {
+  padding: var(--s-2);
+  border: 1px solid var(--c-ink);
+  text-align: left;
+  vertical-align: top;
+}
+.table th {
+  background: none;
+  font-weight: 700;
+}
+
+/* ---- Steps or timeline pattern (.steps): numbered ---- */
+.steps {
+  counter-reset: step;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-3);
+  margin-top: var(--s-3);
+}
+.step {
+  counter-increment: step;
+  padding-top: var(--s-2);
+  border-top: 1px solid var(--c-ink);
+}
+.step::before {
+  content: counter(step);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--s-1);
+  border: 1px solid var(--c-ink);
+  font-weight: 400;
+}
+.step h3 { margin-bottom: 4px; }
+.step p { font-size: var(--t-small); }
+
+/* ---- Form pattern (.form): labeled outlined inputs, select, submit button (non-functional) ---- */
+.form {
+  max-width: 640px;
+  margin-top: var(--s-3);
+}
+.form-field { margin-bottom: var(--s-2); }
+.form-field label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: var(--t-small);
+  font-weight: 400;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: none;
+  border: 1px solid var(--c-ink);
+}
+.form-field textarea { min-height: 120px; }
+.form-actions { margin-top: var(--s-3); }
+
+/* ---- CTA band pattern (.cta-band): headline, body, two buttons, outlined box, no fill ---- */
+.cta-band {
+  padding: var(--s-5) var(--s-3);
+  text-align: center;
+  background: none;
+  border: 1px solid var(--c-ink);
+}
+.cta-band p { margin-left: auto; margin-right: auto; }
+.cta-band h2 { margin-bottom: var(--s-2); }
+.cta-band .btn-row { justify-content: center; }
+
+/* ---- Resource cards pattern (.resource-cards): image placeholder, type tag, title ---- */
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-3);
+  margin-top: var(--s-3);
+}
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: 1px solid var(--c-ink);
+}
+.resource-card .img-ph {
+  min-height: 150px;
+  border: 0;
+  border-bottom: 1px solid var(--c-ink);
+}
+.resource-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  padding: var(--s-2);
+}
+.resource-body h3 { font-size: var(--t-h3); }
+.resource-body p { font-size: var(--t-small); }
+.type-tag {
+  align-self: flex-start;
+  padding: 0.15rem 0.5rem;
+  background: none;
+  border: 1px solid var(--c-ink);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+/* ---- Placeholders (.img-ph, .logo-ph, .icon-ph, .avatar-ph): outlined box with a
+        light gray X drawn corner to corner and a plain text label in the middle ---- */
+.img-ph, .logo-ph, .icon-ph, .avatar-ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='%68%74%74%70%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox='0%200%20100%20100'%20preserveAspectRatio='none'%3E%3Cpath%20d='M0%200L100%20100M0%20100L100%200'%20stroke='%23ddd'%20stroke-width='1'%20vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 1px solid var(--c-ink);
+}
+.img-ph { min-height: 240px; }
+.img-ph-label {
+  padding: 0.25rem 0.6rem;
+  background: none;
+  border: 0;
+  font-size: var(--t-small);
+}
+.icon-ph {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  font-size: 0.75rem;
+}
+.avatar-ph {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  font-size: 0.75rem;
+}
+
+/* ---- Fact flag tag (.flag): plain text in a 1px dotted outline ---- */
+.flag {
+  padding: 0 0.35em;
+  background: none;
+  color: var(--c-ink);
+  border: 1px dotted var(--c-ink);
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+/* ---- Hidden annotation (.why): plain text in a 1px dashed outline box ---- */
+.why {
+  margin-top: var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  max-width: 70ch;
+  background: none;
+  border: 1px dashed var(--c-ink);
+  font-size: var(--t-small);
+  color: var(--c-ink);
+}
+.why[hidden] { display: none; }
+
+/* ---- Page intro (index.html and components.html headings) ---- */
+.page-intro {
+  padding-top: var(--s-4);
+}
+.page-intro h1 + p {
+  margin-top: var(--s-1);
+}
+
+/* ---- Spacing helpers (shared, used inside every pattern) ---- */
+.stacked > * + * { margin-top: var(--s-2); }
+.stat-num + .stat-label { margin-top: 4px; }
+
+/* ---- Show notes toggle button (fixed, bottom right): plain outlined button ---- */
+#notes-toggle {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: var(--c-white);
+  color: var(--c-ink);
+  border: 1px solid var(--c-ink);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* ---- Footer (shared, id="site-footer"): plain text and links, 1px rule above ---- */
+#site-footer {
+  margin-top: var(--s-5);
+  padding: var(--s-5) 0 var(--s-3);
+  background: none;
+  border-top: 1px solid var(--c-ink);
+  font-size: var(--t-small);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: var(--s-4);
+}
+.footer-col h2 {
+  margin-bottom: var(--s-2);
+  font-size: 1rem;
+}
+.footer-tagline {
+  margin-bottom: var(--s-2);
+}
+.footer-col ul li + li { margin-top: var(--s-1); }
+.footer-col a {
+  color: var(--c-ink);
+  text-decoration: none;
+}
+.footer-col a:hover { text-decoration: underline; }
+.footer-form {
+  display: flex;
+  gap: var(--s-1);
+}
+.footer-form input {
+  min-width: 0;
+  flex: 1 1 auto;
+  padding: 0.55rem;
+  background: none;
+  border: 1px solid var(--c-ink);
+}
+.footer-form .btn {
+  padding: 0.55rem 1rem;
+  font-size: var(--t-small);
+}
+.footer-social {
+  display: flex;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+}
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-2);
+  margin-top: var(--s-4);
+  padding-top: var(--s-2);
+  border-top: 1px solid var(--c-ink);
+}
+.footer-legal-links { display: flex; gap: var(--s-2); }
+
+/* ---- Sitemap cards (index.html grouped page cards) ---- */
+.sitemap-group + .sitemap-group { margin-top: var(--s-4); }
+.sitemap-group h2 { margin-bottom: var(--s-2); }
+.sitemap-card .card-num {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.sitemap-card .card-file {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+}
+
+/* ---- Pattern captions (components.html pattern labels): small plain text ---- */
+.pattern-caption {
+  margin-bottom: var(--s-3);
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--c-ink);
+  font-size: 0.75rem;
+}
+
+/* ---- Responsive: one column under 760px ---- */
+@media (max-width: 760px) {
+  .hero,
+  .split,
+  .card-grid--2,
+  .card-grid--3,
+  .card-grid--4,
+  .feature-list,
+  .stat-row,
+  .steps,
+  .resource-cards,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .section { padding: var(--s-4) 0; }
+  .nav-inner { flex-wrap: wrap; }
+  .nav-right { margin-left: 0; }
+  .dropdown {
+    position: static;
+    min-width: 0;
+    padding: 0 0 var(--s-1) var(--s-2);
+    background: none;
+    border: 0;
+    border-left: 1px solid var(--c-ink);
+    margin-left: var(--s-1);
+  }
+  .quote blockquote p { font-size: 1.25rem; }
+  .quote, .stat-band { padding: var(--s-3); }
+}

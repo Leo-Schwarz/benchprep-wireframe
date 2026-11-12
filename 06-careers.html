@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Careers | Benchprep wireframe</title>
+<link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+
+<!-- ============================================================
+     Shared nav. Do not edit the structure or the file names.
+     Page tasks: add aria-current="page" to the nav link that
+     matches the page being built (the current page rule).
+     ============================================================ -->
+<header class="site-header">
+  <nav id="site-nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="01-home.html">Benchprep</a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="02-why-benchprep.html">Why Benchprep</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Solutions</button>
+          <ul class="dropdown">
+            <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+            <li><a href="09-certification-exam-prep.html">Certification exam prep</a></li>
+            <li><a href="12-practice-exams.html">Practice exams</a></li>
+            <li><a href="10-continuing-education.html">Continuing education</a></li>
+            <li><a href="11-microcredentials.html">Microcredentials</a></li>
+            <li><a href="13-industries-we-serve.html">Industries we serve</a></li>
+            <li><a href="14-services.html">Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Platform</button>
+          <ul class="dropdown">
+            <li><a href="15-platform-overview.html">Platform overview</a></li>
+            <li><a href="16-learner-experience.html">Learner experience</a></li>
+            <li><a href="17-ai-engine.html">AI engine</a></li>
+            <li><a href="18-admin-tools.html">Admin tools</a></li>
+            <li><a href="19-reporting-and-data.html">Reporting and data</a></li>
+            <li><a href="20-content-management.html">Content management</a></li>
+            <li><a href="21-integrations.html">Integrations</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Resources</button>
+          <ul class="dropdown">
+            <li><a href="22-resource-library.html">Resource library</a></li>
+            <li><a href="23-blog.html">Blog</a></li>
+            <li><a href="24-customer-stories.html">Customer stories</a></li>
+            <li><a href="25-developer-center.html">Developer center</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="03-pricing.html">Pricing</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a class="nav-login" href="#login">Login</a>
+        <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ============================================================
+     Page content goes inside <main>. Page tasks:
+     1. Copy this file to the page name from the brief (example 01-home.html).
+     2. Set the <title> to "Page name | Benchprep wireframe".
+     3. Wrap each approved section as
+        <section class="section" data-section="N"> where N is the section
+        number in approved/NN.md, and keep the approved order.
+     4. Put the approved **Why:** rationale at the end of that section as
+        <aside class="why" hidden>Why: ...</aside>
+     5. Use a section pattern from wireframe.css (see components.html).
+     6. Mark the current page in the nav with aria-current="page".
+     Edit nothing below <main> except the aria-current note above.
+     ============================================================ -->
+<main id="main">
+<!-- Section 1: Hero -->
+<section class="section" data-section="1" data-page="Careers">
+  <div class="container">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">CAREERS</p>
+        <h1>Help people prepare for what matters.</h1>
+        <p>Every day, Benchprep helps people keep learning and growing throughout their careers. If that work appeals to you, explore our open roles.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#">See open roles</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: team at work]</span></div>
+    </div>
+    <aside class="why" hidden>Why: The feedback's broadened line is adopted verbatim as the opening sentence. "Get ready" becomes "prepare" in the headline under the verb rules. The primary here is "See open roles," the one sanctioned primary-CTA exception (flagged to the team in the CTA system).</aside>
+  </div>
+</section>
+
+<!-- Section 2: Mission -->
+<section class="section" data-section="2" data-page="Careers">
+  <div class="container">
+    <div class="split">
+      <div class="stacked">
+        <h2>Work that someone's career depends on.</h2>
+        <p>Our customers set the standard for their professions. We help the people who meet it get there, and stay there.</p>
+        <p>Nobody should fall short of a goal they were capable of reaching. That belief guides every role here, from engineering to customer success.</p>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: people at work]</span></div>
+    </div>
+    <aside class="why" hidden>Why: Mission stays close to R3. "Practice" never appears as a profession anywhere on the site (house rule), so "professions" does the work.</aside>
+  </div>
+</section>
+
+<!-- Section 3: How we work -->
+<section class="section" data-section="3" data-page="Careers">
+  <div class="container">
+    <div class="section-head">
+      <h2>How we work.</h2>
+    </div>
+    <div class="card-grid card-grid--3">
+      <div class="card">
+        <h3>We do the hard part</h3>
+        <p>We take on what is difficult for our customers, then explain how we plan to do it.</p>
+      </div>
+      <div class="card">
+        <h3>We say what we mean</h3>
+        <p>Clear writing, clear plans, clear answers.</p>
+      </div>
+      <div class="card">
+        <h3>We stay for the long run</h3>
+        <p>Our customers are in this for decades, and so are we.</p>
+      </div>
+    </div>
+    <aside class="why" hidden>Why: The "plainly" repetition is real (feedback noted): the phrase now appears zero times. The second value becomes "We say what we mean," and the first drops "plainly" for "explain." "We do the hard part" and "We stay for the long run" keep their Round 3 wording per the strategy.</aside>
+  </div>
+</section>
+
+<!-- Section 4: Awards -->
+<section class="section" data-section="4" data-page="Careers">
+  <div class="container">
+    <div class="section-head">
+      <h2>Recognized where it counts.</h2>
+    </div>
+    <div class="card-grid card-grid--2">
+      <div class="card">
+        <h3>2026</h3>
+        <p><span class="flag">[PROOF NEEDED: names of the two workplace or innovation awards won in October 2026, with links]</span></p>
+      </div>
+      <div class="card">
+        <h3>The full row</h3>
+        <p>show the most recent awards first, with a view-more control opening the historical set and its press releases.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <details class="faq-item">
+        <summary>View more</summary>
+        <div class="faq-answer">
+          <div class="img-ph"><span class="img-ph-label">[Visual: historical awards set with press release links]</span></div>
+        </div>
+      </details>
+    </div>
+    <aside class="why" hidden>Why: The SEO case in the feedback is accepted: the earlier awards and their press releases stay reachable behind view more, while the 2026 wins lead. The award names are slotted exactly as the brief requires.</aside>
+  </div>
+</section>
+
+<!-- Section 5: Close -->
+<section class="section" data-section="5" data-page="Careers">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Come build the work behind every milestone.</h2>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#">See open roles</a>
+        <a class="btn btn-secondary" href="02-why-benchprep.html">Why Benchprep</a>
+      </div>
+    </div>
+    <aside class="why" hidden>Why: The warm line ships with the safer one parked as its alternative: strategy preferred the first for warmth and left the call to the team. "Come build the first mile" cannot stay regardless: the first mile belongs to four pages only (6b).</aside>
+  </div>
+</section>
+</main>
+
+<!-- ============================================================
+     Shared footer. Do not edit.
+     ============================================================ -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Benchprep</h2>
+        <p class="footer-tagline">Learning platform for professional certification.</p>
+        <form class="footer-form" action="#">
+          <input type="email" placeholder="Email" aria-label="Email">
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="02-why-benchprep.html">Why Benchprep</a></li>
+          <li><a href="15-platform-overview.html">Platform</a></li>
+          <li><a href="22-resource-library.html">Resources</a></li>
+          <li><a href="03-pricing.html">Pricing</a></li>
+          <li><a href="04-contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Solutions</h2>
+        <ul>
+          <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+          <li><a href="09-certification-exam-prep.html">Certification exam prep</a></li>
+          <li><a href="12-practice-exams.html">Practice exams</a></li>
+          <li><a href="10-continuing-education.html">Continuing education</a></li>
+          <li><a href="11-microcredentials.html">Microcredentials</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="05-about-benchprep.html">About Benchprep</a></li>
+          <li><a href="06-careers.html" aria-current="page">Careers</a></li>
+          <li><a href="07-partnerships.html">Partnerships</a></li>
+          <li><a href="24-customer-stories.html">Customer stories</a></li>
+          <li><a href="25-developer-center.html">Developer center</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Benchprep</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Show notes toggle: fixed button that flips every .why annotation. -->
+<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
+<script>
+  (function () {
+    var btn = document.getElementById("notes-toggle");
+    if (!btn) { return; }
+    var notes = document.querySelectorAll(".why");
+    btn.addEventListener("click", function () {
+      var show = btn.getAttribute("aria-pressed") !== "true";
+      btn.setAttribute("aria-pressed", show ? "true" : "false");
+      btn.textContent = show ? "Hide notes" : "Show notes";
+      for (var i = 0; i < notes.length; i++) {
+        if (show) {
+          notes[i].removeAttribute("hidden");
+        } else {
+          notes[i].setAttribute("hidden", "");
+        }
+      }
+    });
+  }());
+</script>
+
+<script src="comments.js" defer></script>
+</body>
+</html>
+

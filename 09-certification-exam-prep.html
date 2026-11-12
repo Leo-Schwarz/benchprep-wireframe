@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certification exam prep | Benchprep wireframe</title>
+<link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+
+<!-- ============================================================
+     Shared nav. Do not edit the structure or the file names.
+     Page tasks: add aria-current="page" to the nav link that
+     matches the page being built (the current page rule).
+     ============================================================ -->
+<header class="site-header">
+  <nav id="site-nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="01-home.html">Benchprep</a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="02-why-benchprep.html">Why Benchprep</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Solutions</button>
+          <ul class="dropdown">
+            <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+            <li><a href="09-certification-exam-prep.html" aria-current="page">Certification exam prep</a></li>
+            <li><a href="12-practice-exams.html">Practice exams</a></li>
+            <li><a href="10-continuing-education.html">Continuing education</a></li>
+            <li><a href="11-microcredentials.html">Microcredentials</a></li>
+            <li><a href="13-industries-we-serve.html">Industries we serve</a></li>
+            <li><a href="14-services.html">Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Platform</button>
+          <ul class="dropdown">
+            <li><a href="15-platform-overview.html">Platform overview</a></li>
+            <li><a href="16-learner-experience.html">Learner experience</a></li>
+            <li><a href="17-ai-engine.html">AI engine</a></li>
+            <li><a href="18-admin-tools.html">Admin tools</a></li>
+            <li><a href="19-reporting-and-data.html">Reporting and data</a></li>
+            <li><a href="20-content-management.html">Content management</a></li>
+            <li><a href="21-integrations.html">Integrations</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Resources</button>
+          <ul class="dropdown">
+            <li><a href="22-resource-library.html">Resource library</a></li>
+            <li><a href="23-blog.html">Blog</a></li>
+            <li><a href="24-customer-stories.html">Customer stories</a></li>
+            <li><a href="25-developer-center.html">Developer center</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="03-pricing.html">Pricing</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a class="nav-login" href="#login">Login</a>
+        <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ============================================================
+     Page content goes inside <main>. Page tasks:
+     1. Copy this file to the page name from the brief (example 01-home.html).
+     2. Set the <title> to "Page name | Benchprep wireframe".
+     3. Wrap each approved section as
+        <section class="section" data-section="N"> where N is the section
+        number in approved/NN.md, and keep the approved order.
+     4. Put the approved **Why:** rationale at the end of that section as
+        <aside class="why" hidden>Why: ...</aside>
+     5. Use a section pattern from wireframe.css (see components.html).
+     6. Mark the current page in the nav with aria-current="page".
+     Edit nothing below <main> except the aria-current note above.
+     ============================================================ -->
+<main id="main">
+<!-- Section 1: Hero -->
+<section class="section" data-section="1" data-page="Certification exam prep">
+  <div class="container">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Certification exam prep for associations, certification bodies, and training companies</p>
+        <h1>Ready for the exam that decides a career.</h1>
+        <p>Practice that adapts to every learner, a plan that fits their week, and an exam day that feels familiar.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+          <a class="btn btn-secondary" href="15-platform-overview.html">See the platform</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: product screenshot]</span></div>
+    </div>
+    <aside class="why" hidden>Why: "Decides" is kept. This audience plans around risk, and the exam is the event that decides a career. "Propels" oversells. "All under your name" moves to Section 3 per 6d, so the hero sells the stake and the mechanism only.</aside>
+  </div>
+</section>
+
+<!-- Section 2: Feature stack -->
+<section class="section" data-section="2" data-page="Certification exam prep">
+  <div class="container">
+    <div class="section-head">
+      <h2>Practice that finds the gaps first.</h2>
+      <p>Adaptive practice, self-guided study plans, and exam-day readiness, all built on what a learner knows and keeps missing.</p>
+      <p>Your content and learner data stay private and are never used to train outside models.</p>
+    </div>
+    <div class="feature-list">
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Personalized practice</h3>
+          <p>Every session adapts to what each learner knows and keeps missing. Custom practice, flashcards, and game mechanics keep them focused and engaged.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Study plans and real-time feedback</h3>
+          <p>Self-guided study plans and feedback on performance and confidence, so study time goes where it counts. An AI-enhanced assistant explains answers inside your content.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Exam-day readiness</h3>
+          <p>Timed, simulated exams and the same tools candidates will use on test day, so nothing about the exam is a surprise. AI-enhanced feedback names each candidate's strengths and weak topics.</p>
+        </div>
+      </div>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-secondary" href="12-practice-exams.html">See practice exams</a>
+    </div>
+    <aside class="why" hidden>Why: The Round 3 three-feature stack is kept and gains its AI lines per the brief: the in-content assistant in study feedback and strengths-and-weaknesses feedback in readiness, both described by the job (6a), with catalog names left to the AI Engine page. "Simulated exams" resolves the full-length debate and the glossary bars mock exams; ExamSim is not named here. The section CTA answers the feedback's question by sending the readiness item to Practice exams.</aside>
+  </div>
+</section>
+
+<!-- Section 3: Revenue -->
+<section class="section" data-section="3" data-page="Certification exam prep">
+  <div class="container">
+    <div class="section-head">
+      <h2>Your prep, your name, your revenue.</h2>
+      <p>Your name is on every screen your learner sees.</p>
+      <p>Sell direct to learners, provision seats to employers and schools, and offer self-paced, blended, or hybrid programs from one catalog.</p>
+      <p>HRCI went further: learners register for an exam and buy study materials at a reduced rate in one click, through a "build your own bundle" program running on Benchprep.</p>
+    </div>
+    <div class="card-grid card-grid--3">
+      <div class="card">
+        <h3>Sell to individual learners</h3>
+        <p>Exam prep and practice exams sold direct from one catalog.</p>
+      </div>
+      <div class="card">
+        <h3>Provision seats to organizations</h3>
+        <p>Employers and schools buy seats for their people.</p>
+      </div>
+      <div class="card">
+        <h3>Program formats</h3>
+        <p>Self-paced, blended, or hybrid delivery from the same catalog.</p>
+      </div>
+    </div>
+    <p>HRCI build-your-own-bundle program: one-click exam registration and discounted study materials, run on Benchprep <span class="flag">[VERIFY: details and permission with HRCI]</span>.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="15-platform-overview.html">See the platform</a>
+    </div>
+    <aside class="why" hidden>Why: The section that carries white-labeling is named per 6d: "Your prep, your name, your revenue". "All under your name" arrives here from the hero. The two economics (6g) show in the item pair, so training companies sit inside the same story. The HRCI bundle line stays in the body as Round 3 had it, marked for verification and free of any speaker name.</aside>
+  </div>
+</section>
+
+<!-- Section 4: Proof -->
+<section class="section" data-section="4" data-page="Certification exam prep">
+  <div class="container">
+    <div class="section-head">
+      <h2>Measurable gains in pass rates.</h2>
+      <p>Readiness is only real when it shows up in pass rates.</p>
+    </div>
+    <div class="stat-band">
+      <div class="stat-row">
+        <div class="stat">
+          <p class="stat-num">More than 10 percent</p>
+          <p class="stat-label">The measured improvement on some FE exam pass rates for examinees who purchased the FE interactive practice exams.</p>
+        </div>
+        <div class="stat">
+          <p class="stat-num">Repeat examinees</p>
+          <p class="stat-label">The difference is even higher for candidates taking the exam again.</p>
+        </div>
+        <div class="stat">
+          <p class="stat-num">Program scale</p>
+          <p class="stat-label">Customers from about 500 annual learners to more than 1.5 million <span class="flag">[VERIFY: scale range]</span>.</p>
+        </div>
+      </div>
+    </div>
+    <figure class="quote">
+      <blockquote>
+        <p>NCEES has tracked pass rates for examinees who purchased the FE interactive practice exams and compared them to those who did not. We find that those who purchase an interactive practice exam have measurably higher exam pass rates. The difference is even higher for repeat examinees, improving some FE exam pass rates by more than 10 percent.</p>
+      </blockquote>
+      <figcaption>
+        <span class="avatar-ph">[Avatar]</span>
+        <span>Lehmon Dekle, P.E., Chief Officer of Examinations <span class="flag">[VERIFY: quote and wording with NCEES]</span></span>
+      </figcaption>
+    </figure>
+    <div class="btn-row">
+      <a class="btn btn-secondary" href="#">Read the NCEES story</a>
+      <a class="btn btn-secondary" href="#">Read the Eatright story</a>
+    </div>
+    <aside class="why" hidden>Why: The brief pairs the full NCEES quote with the FE stats, so Round 3's stats band and testimonial merge into one proof unit. The ACCA study hub numbers and the customer quote retire until ACCA is confirmed, and the speaker who left her company is gone. The band keeps its two story links from Round 3, now NCEES and Eatright, the two allocated case-study CTAs (see Open questions on the one-secondary rule). The scale line keeps Round 3's "confirm" note as [VERIFY]. Proof: NCEES quote, Lehmon Dekle, P.E., Chief Officer of Examinations: "NCEES has tracked pass rates for examinees who purchased the FE interactive practice exams and compared them to those who did not. We find that those who purchase an interactive practice exam have measurably higher exam pass rates. The difference is even higher for repeat examinees, improving some FE exam pass rates by more than 10 percent." <span class="flag">[VERIFY: quote and wording with NCEES]</span>. Band alternate: Eatright (Academy of Nutrition and Dietetics) prep case study <span class="flag">[VERIFY: rights and URL]</span>.</aside>
+  </div>
+</section>
+
+<!-- Section 5: First mile -->
+<section class="section" data-section="5" data-page="Certification exam prep">
+  <div class="container">
+    <div class="split">
+      <div class="stacked">
+        <h2>The relationship starts here.</h2>
+        <p>The learner who passes becomes your credential holder for decades.</p>
+        <p>The first mile is the moment a learner starts preparing, long before the exam and long before the membership.</p>
+        <p>It is where trust, habits, and a relationship with your organization begin.</p>
+        <p>Continuing education runs on the same platform, so you keep the learner, the data, and the revenue.</p>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="10-continuing-education.html">See continuing education</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: learner journey]</span></div>
+    </div>
+    <aside class="why" hidden>Why: Per the brief this closing relationship section gets the first mile definition treatment (6b) and the revenue consequence, both in the words already approved. The retired paired link "continuing education and recertification" dies here per 6f, replaced by a concrete link to the continuing education solution. The decades line stays because it is the whole point of a certification relationship.</aside>
+  </div>
+</section>
+
+<!-- Section 6: Build with you -->
+<section class="section" data-section="6" data-page="Certification exam prep">
+  <div class="container">
+    <div class="split">
+      <div class="stacked">
+        <h2>We'll build it with you.</h2>
+        <p>From the exam blueprint up: instructional design, authoring, subject matter experts, licensed content from publishers, and print-to-digital conversion.</p>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="14-services.html">How we work with you</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: services team]</span></div>
+    </div>
+    <aside class="why" hidden>Why: This section is the honest answer to "what if we lack the team", and its facts are already live in Round 3. It is kept as is, tightened only in punctuation, because it serves program owners with small education teams and complements exam prep with services rather than features.</aside>
+  </div>
+</section>
+
+<!-- Section 7: Close -->
+<section class="section" data-section="7" data-page="Certification exam prep">
+  <div class="container">
+    <div class="cta-band">
+      <h2>See exam prep on Benchprep.</h2>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+        <a class="btn btn-secondary" href="24-customer-stories.html">See customer stories</a>
+      </div>
+    </div>
+    <aside class="why" hidden>Why: The brief resolves the unclear Round 3 closer to "See exam prep on Benchprep", which fixes what the feedback flagged ("See it with your exam") while staying out of vague territory like "See what's possible". The Pricing cross-link drops per the 6e pattern, and the conversion pair follows the site standard.</aside>
+  </div>
+</section>
+</main>
+
+<!-- ============================================================
+     Shared footer. Do not edit.
+     ============================================================ -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Benchprep</h2>
+        <p class="footer-tagline">Learning platform for professional certification.</p>
+        <form class="footer-form" action="#">
+          <input type="email" placeholder="Email" aria-label="Email">
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="02-why-benchprep.html">Why Benchprep</a></li>
+          <li><a href="15-platform-overview.html">Platform</a></li>
+          <li><a href="22-resource-library.html">Resources</a></li>
+          <li><a href="03-pricing.html">Pricing</a></li>
+          <li><a href="04-contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Solutions</h2>
+        <ul>
+          <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+          <li><a href="09-certification-exam-prep.html">Certification exam prep</a></li>
+          <li><a href="12-practice-exams.html">Practice exams</a></li>
+          <li><a href="10-continuing-education.html">Continuing education</a></li>
+          <li><a href="11-microcredentials.html">Microcredentials</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="05-about-benchprep.html">About Benchprep</a></li>
+          <li><a href="06-careers.html">Careers</a></li>
+          <li><a href="07-partnerships.html">Partnerships</a></li>
+          <li><a href="24-customer-stories.html">Customer stories</a></li>
+          <li><a href="25-developer-center.html">Developer center</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Benchprep</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Show notes toggle: fixed button that flips every .why annotation. -->
+<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
+<script>
+  (function () {
+    var btn = document.getElementById("notes-toggle");
+    if (!btn) { return; }
+    var notes = document.querySelectorAll(".why");
+    btn.addEventListener("click", function () {
+      var show = btn.getAttribute("aria-pressed") !== "true";
+      btn.setAttribute("aria-pressed", show ? "true" : "false");
+      btn.textContent = show ? "Hide notes" : "Show notes";
+      for (var i = 0; i < notes.length; i++) {
+        if (show) {
+          notes[i].removeAttribute("hidden");
+        } else {
+          notes[i].setAttribute("hidden", "");
+        }
+      }
+    });
+  }());
+</script>
+
+<script src="comments.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content management | Benchprep wireframe</title>
+<link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+
+<!-- ============================================================
+     Shared nav. Do not edit the structure or the file names.
+     Page tasks: add aria-current="page" to the nav link that
+     matches the page being built (the current page rule).
+     ============================================================ -->
+<header class="site-header">
+  <nav id="site-nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="01-home.html">Benchprep</a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="02-why-benchprep.html">Why Benchprep</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Solutions</button>
+          <ul class="dropdown">
+            <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+            <li><a href="09-certification-exam-prep.html">Certification exam prep</a></li>
+            <li><a href="12-practice-exams.html">Practice exams</a></li>
+            <li><a href="10-continuing-education.html">Continuing education</a></li>
+            <li><a href="11-microcredentials.html">Microcredentials</a></li>
+            <li><a href="13-industries-we-serve.html">Industries we serve</a></li>
+            <li><a href="14-services.html">Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Platform</button>
+          <ul class="dropdown">
+            <li><a href="15-platform-overview.html">Platform overview</a></li>
+            <li><a href="16-learner-experience.html">Learner experience</a></li>
+            <li><a href="17-ai-engine.html">AI engine</a></li>
+            <li><a href="18-admin-tools.html">Admin tools</a></li>
+            <li><a href="19-reporting-and-data.html">Reporting and data</a></li>
+            <li><a href="20-content-management.html" aria-current="page">Content management</a></li>
+            <li><a href="21-integrations.html">Integrations</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button">Resources</button>
+          <ul class="dropdown">
+            <li><a href="22-resource-library.html">Resource library</a></li>
+            <li><a href="23-blog.html">Blog</a></li>
+            <li><a href="24-customer-stories.html">Customer stories</a></li>
+            <li><a href="25-developer-center.html">Developer center</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="03-pricing.html">Pricing</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a class="nav-login" href="#login">Login</a>
+        <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ============================================================
+     Page content goes inside <main>. Page tasks:
+     1. Copy this file to the page name from the brief (example 01-home.html).
+     2. Set the <title> to "Page name | Benchprep wireframe".
+     3. Wrap each approved section as
+        <section class="section" data-section="N"> where N is the section
+        number in approved/NN.md, and keep the approved order.
+     4. Put the approved **Why:** rationale at the end of that section as
+        <aside class="why" hidden>Why: ...</aside>
+     5. Use a section pattern from wireframe.css (see components.html).
+     6. Mark the current page in the nav with aria-current="page".
+     Edit nothing below <main> except the aria-current note above.
+     ============================================================ -->
+<main id="main">
+<!-- Section 1: Hero -->
+<section class="section" data-section="1" data-page="Content management">
+  <div class="container">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Platform</p>
+        <h1>Bring your content. We will make it work.</h1>
+        <p>Build new courses, import existing content in standard formats, or let our team do it for you.</p>
+        <p>Everything works on any device and stays current as standards change.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+          <a class="btn btn-secondary" href="14-services.html">How we work with you</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: course content on any device]</span></div>
+    </div>
+    <aside class="why" hidden>Why: The approved lead message heads the page while the feedback's firmer line does the explaining in one breath. The second line carries the any-device promise and the keep-current promise already used on Home, so the content team sees all three modes (build, import, hand off) before scrolling.</aside>
+  </div>
+</section>
+
+<!-- Section 2: What your content team can do -->
+<section class="section" data-section="2" data-page="Content management">
+  <div class="container">
+    <div class="section-head">
+      <h2>What your content team can do.</h2>
+      <p>Authoring, importing, and delivery tools that your team runs.</p>
+      <p>Bring what you have in standard formats. Our content team converts files that need it.</p>
+    </div>
+    <div class="feature-list">
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Content authoring</h3>
+          <p>Build interactive courses that work on any device.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Import what you have</h3>
+          <p>Bring existing content in standard formats: SCORM, xAPI, AICC, and cmi5.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Files</h3>
+          <p>PDF, ePub, audio, video, and XML.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Languages</h3>
+          <p>Import, configure, and deliver content in multiple languages, with a localized interface.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Learning paths</h3>
+          <p>Bundle and sequence courses around a learning goal.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Premium content</h3>
+          <p>Mark lessons or resources as premium for upsells and in-course purchases.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Scheduled assignments</h3>
+          <p>Set release dates, hide materials until they're due, and assign to individuals or groups.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="icon-ph">[Icon]</div>
+        <div>
+          <h3>Engagement tracking</h3>
+          <p>See how each piece of content is used, in real time.</p>
+        </div>
+      </div>
+    </div>
+    <p>Content and interface in more than a dozen languages <span class="flag">[VERIFY: confirm the 12+ count and the exact wording]</span>.</p>
+    <aside class="why" hidden>Why: The feedback's action-based rewrite turns "Standards" into "Import what you have," since the heading promises what the team can do. The internal ContentBluePrint name dies with its typo; "content authoring" is what the visitor buys (glossary). LTI leaves this list for the sell section, and the conversion line stays because it is the "import or hand off" promise in practice. Proof note: [VERIFY: confirm the 12+ count and the exact wording].</aside>
+  </div>
+</section>
+<!-- Section 3: Sell into any LTI platform -->
+<section class="section" data-section="3" data-page="Content management">
+  <div class="container">
+    <div class="split">
+      <div class="stacked">
+        <h2>Sell into any LTI platform.</h2>
+        <p>The course experience is LTI 1.3 certified by IMS Global <span class="flag">[VERIFY: certification current]</span>.</p>
+        <p>Sell direct to individual learners, or sell your Benchprep-hosted products to organizations that run another learning platform.</p>
+        <p>Show content hosted elsewhere inside Benchprep, alongside the courses you build.</p>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="21-integrations.html">See the integrations</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: selling into another learning platform diagram]</span></div>
+    </div>
+    <p>BigCommerce (ecommerce), Accredible and Credly (badging), Personify and iMIS (AMS), Snowflake (data), Zoom Meetings (video), and Skillable (labs) connect to the platform <span class="flag">[VERIFY: each partner named plus logo rights where shown]</span>.</p>
+    <aside class="why" hidden>Why: This is the page's one commerce beat (P2), and it lands directly on the brief's job of proving that selling content is covered. The LTI certification is the allocated proof and is flagged for verification of current status. The confirmed integration set rides here because selling only works when commerce and membership systems connect; the full table belongs to the Integrations page. Proof notes: [VERIFY: certification current] and [VERIFY: each partner named plus logo rights where shown].</aside>
+  </div>
+</section>
+
+<!-- Section 4: AI for the content team -->
+<section class="section" data-section="4" data-page="Content management">
+  <div class="container">
+    <div class="split">
+      <div class="stacked">
+        <h2>A head start on every draft.</h2>
+        <p>AI-enhanced content tools draw on the material you already trust.</p>
+        <p>Shipping in the coming months, AI-enhanced drafting turns your materials into a course draft, ready for your team to review.</p>
+        <p>Your content and learner data stay private and are never used to train outside models.</p>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="17-ai-engine.html">See the AI engine</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: AI drafting workflow]</span></div>
+    </div>
+    <p>AI now serves learners, program admins, and content admins.</p>
+    <aside class="why" hidden>Why: The brief grants this page the two content-side AI capabilities, and 6a says describe the job rather than name the catalog. The drafting line is written as an outcome (a draft your team reviews), the dated framing keeps it honest, and the trust line appears wherever AI is sold. The proof line is the approved content-side platform fact.</aside>
+  </div>
+</section>
+
+<!-- Section 5: A content team when you need one -->
+<section class="section" data-section="5" data-page="Content management">
+  <div class="container">
+    <div class="split">
+      <div class="stacked">
+        <h2>A content team when you need one.</h2>
+        <p>Course design strategy for your learners and your business.</p>
+        <p>We migrate offline, blended, and online content, and help turn a print program into a mature digital one.</p>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="14-services.html">How we work with you</a>
+        </div>
+      </div>
+      <div class="img-ph"><span class="img-ph-label">[Visual: team working with a customer]</span></div>
+    </div>
+    <aside class="why" hidden>Why: The services band is where "let our team do it for you" lands, and it stays at the level of the work offered in Round 3, with nothing added. The cross-CTA changes automatically with the feedback's call: one services label, used in the hero and here, replacing "Developer center" everywhere on the page.</aside>
+  </div>
+</section>
+<!-- Section 6: The HRCI view on content -->
+<section class="section" data-section="6" data-page="Content management">
+  <div class="container">
+    <div class="section-head">
+      <h2>On creating engaging, effective learning content.</h2>
+      <p>From HRCI, in the CEO-insights series on the Benchprep blog.</p>
+    </div>
+    <figure class="quote">
+      <blockquote>
+        <p><span class="flag">[PROOF NEEDED: pull quote from the HRCI CEO-insights blog post on creating engaging learning content]</span>.</p>
+      </blockquote>
+      <figcaption>
+        <span class="avatar-ph">[Avatar]</span>
+        <span>Attribute to the named HRCI speaker with full title from the post <span class="flag">[VERIFY]</span>.</span>
+      </figcaption>
+    </figure>
+    <aside class="why" hidden>Why: Richardson is a removed customer, so its quote comes out entirely. The feedback offered the HRCI blog quote to replace it, since the post covers exactly what this page sells. The slot is written now and holds for the pull quote, so the proof beat keeps its place in the page rhythm. Proof notes: [PROOF NEEDED: pull quote from the HRCI CEO-insights blog post on creating engaging learning content]; attribute to the named HRCI speaker with full title from the post [VERIFY].</aside>
+  </div>
+</section>
+
+<!-- Section 7: Close -->
+<section class="section" data-section="7" data-page="Content management">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Bring us a sample course.</h2>
+      <p>Start with one course you teach today. We will show you how it lands on Benchprep.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="04-contact-us.html">Request a demo</a>
+        <a class="btn btn-secondary" href="04-contact-us.html">See a course in action</a>
+      </div>
+    </div>
+    <div class="card-grid card-grid--3">
+      <div class="card">
+        <h3><a href="11-microcredentials.html">Microcredentials</a></h3>
+        <p>Small, stackable credentials that keep learners progressing as careers grow.</p>
+      </div>
+      <div class="card">
+        <h3><a href="10-continuing-education.html">Continuing education</a></h3>
+        <p>Credits and tracking on the same platform, kept current through the recertification requirement.</p>
+      </div>
+      <div class="card">
+        <h3><a href="17-ai-engine.html">The AI engine</a></h3>
+        <p>AI-enhanced help across learning, administration, and content.</p>
+      </div>
+    </div>
+    <aside class="why" hidden>Why: The feedback's closing pair is adopted as "See a course in action," which also installs the platform-page "See" secondary in place of "Developer center." The Round 3 cross-link trio is merged here as Where-next items so the page routes to adjacent solutions and the AI Engine without a footer-repeat list. "Continuing education and recertification" loses its banned suffix per 6f.</aside>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     Shared footer. Do not edit.
+     ============================================================ -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Benchprep</h2>
+        <p class="footer-tagline">Learning platform for professional certification.</p>
+        <form class="footer-form" action="#">
+          <input type="email" placeholder="Email" aria-label="Email">
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="02-why-benchprep.html">Why Benchprep</a></li>
+          <li><a href="15-platform-overview.html">Platform</a></li>
+          <li><a href="22-resource-library.html">Resources</a></li>
+          <li><a href="03-pricing.html">Pricing</a></li>
+          <li><a href="04-contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Solutions</h2>
+        <ul>
+          <li><a href="08-solutions-overview.html">Solutions overview</a></li>
+          <li><a href="09-certification-exam-prep.html">Certification exam prep</a></li>
+          <li><a href="12-practice-exams.html">Practice exams</a></li>
+          <li><a href="10-continuing-education.html">Continuing education</a></li>
+          <li><a href="11-microcredentials.html">Microcredentials</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="05-about-benchprep.html">About Benchprep</a></li>
+          <li><a href="06-careers.html">Careers</a></li>
+          <li><a href="07-partnerships.html">Partnerships</a></li>
+          <li><a href="24-customer-stories.html">Customer stories</a></li>
+          <li><a href="25-developer-center.html">Developer center</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Benchprep</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Show notes toggle: fixed button that flips every .why annotation. -->
+<button id="notes-toggle" type="button" aria-pressed="false">Show notes</button>
+<script>
+  (function () {
+    var btn = document.getElementById("notes-toggle");
+    if (!btn) { return; }
+    var notes = document.querySelectorAll(".why");
+    btn.addEventListener("click", function () {
+      var show = btn.getAttribute("aria-pressed") !== "true";
+      btn.setAttribute("aria-pressed", show ? "true" : "false");
+      btn.textContent = show ? "Hide notes" : "Show notes";
+      for (var i = 0; i < notes.length; i++) {
+        if (show) {
+          notes[i].removeAttribute("hidden");
+        } else {
+          notes[i].setAttribute("hidden", "");
+        }
+      }
+    });
+  }());
+</script>
+
+<script src="comments.js" defer></script>
+</body>
+</html>
+
